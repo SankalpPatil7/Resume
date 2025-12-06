@@ -1,0 +1,276 @@
+/* ==========================
+   GLOBAL STYLES
+========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #0f0f0f;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+a {
+    color: #66c2ff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* ==========================
+   LAYOUT
+========================== */
+.container {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    max-width: 1300px;
+}
+
+/* ==========================
+   SIDEBAR
+========================== */
+.sidebar {
+    width: 28%;
+    background: #1a1a1a;
+    padding: 25px;
+    border-radius: 20px;
+    position: sticky;
+    top: 20px;
+    height: fit-content;
+    box-shadow: 0px 0px 20px rgba(0,255,255,0.05);
+}
+
+/* PROFILE */
+.profile {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.profile-avatar i {
+    font-size: 80px;
+    color: cyan;
+    margin-bottom: 10px;
+}
+
+.profile-name {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.profile-title {
+    font-size: 15px;
+    color: #bbb;
+    margin: 8px 0;
+}
+
+.profile-bio {
+    margin-top: 12px;
+    color: #ccc;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* CONTACT */
+.contact ul {
+    list-style: none;
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+.contact li {
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* ==========================
+   SKILLS SECTION
+========================== */
+.sidebar-section-title {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.skill-category {
+    margin-top: 18px;
+}
+
+.skill-tags {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tag {
+    background: #222;
+    border: 1px solid #333;
+    padding: 6px 12px;
+    border-radius: 25px;
+    font-size: 13px;
+    transition: 0.3s;
+}
+.skill-tag:hover {
+    background: cyan;
+    color: black;
+}
+
+/* ==========================
+   MAIN CONTENT
+========================== */
+.main-content {
+    width: 72%;
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0,255,255,0.08);
+}
+
+.section {
+    margin-bottom: 35px;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.section-header i {
+    color: cyan;
+}
+
+/* ==========================
+   EDUCATION
+========================== */
+.education-item {
+    background: #242424;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    border-left: 4px solid cyan;
+}
+
+.education-item h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.education-item .degree,
+.education-item .date,
+.education-item .grade {
+    font-size: 14px;
+    color: #ccc;
+    margin-top: 5px;
+}
+
+/* ==========================
+   PROJECTS
+========================== */
+.projects-grid {
+    display: grid;
+    gap: 20px;
+}
+
+.project-card {
+    background: #242424;
+    padding: 20px;
+    border-radius: 15px;
+    transition: 0.4s;
+    border-left: 4px solid cyan;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    background: #2a2a2a;
+}
+
+.project-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.project-header i {
+    font-size: 22px;
+    color: cyan;
+}
+
+.project-card ul {
+    margin-left: 18px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.tech-stack {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tech-badge {
+    background: #333;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    border: 1px solid #444;
+    transition: 0.3s;
+}
+.tech-badge:hover {
+    background: cyan;
+    color: black;
+}
+
+/* ==========================
+   HACKATHON
+========================== */
+.hackathon-item {
+    background: #242424;
+    padding: 12px;
+    border-radius: 10px;
+    border-left: 4px solid cyan;
+    margin-bottom: 12px;
+    transition: 0.3s;
+}
+
+.hackathon-item:hover {
+    background: #2b2b2b;
+}
+
+.hackathon-item h3 {
+    font-size: 17px;
+}
+
+.achievement {
+    margin-top: 5px;
+    color: #00ffaa;
+    font-weight: bold;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar,
+    .main-content {
+        width: 100%;
+    }
+}
